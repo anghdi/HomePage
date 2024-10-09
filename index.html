@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="mx-auto box-border min-w-full top-0 left-0 h-screen">
+        <div class="mx-20 p-[10px]">
+            <!-- Header -->
+            <div class="items-center flex justify-between lg:gap-5 py-5">
+                <img src="assets/logo.png" alt="" srcset="">
+                <div class="border-2 border-[#1176FF66] rounded-lg lg:w-[841px]">
+                    <form action="" class="bg-white rounded-md flex items-center gap-1">
+                        <select
+                            class="select select-ghost max-w-40 !outline-none border-none rounded-full text-[#0D2654] font-bold text-center font-sans"
+                            style="font-family: 'Roboto', sans-serif;">
+                            <option disabled selected>Semua Kategori</option>
+                            <option>Svelte</option>
+                            <option>Vue</option>
+                            <option>React</option>
+                        </select>
+                        <div class="divider divider-horizontal"></div>
+                        <label class="input flex items-center gap-2 !outline-none border-none w-full">
+                            <input type="text" class="grow" placeholder="Cari tiket eventmu disini, yaa" />
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor"
+                                class="h-4 w-4 opacity-70">
+                                <path fill-rule="evenodd"
+                                    d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </label>
+                    </form>
+                </div>
+                <div class="flex gap-1 items-center font-sans font-bold" style="font-family: 'Roboto', sans-serif;">
+                    <button class="text-[#1176FF] border-2 border-[#1176FF] px-10 py-2 rounded-full"> Daftar </button>
+                    <button class="text-white bg-[#1176FF] px-10 py-2 rounded-full"> Masuk </button>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Navbar -->
+            <div class="grid grid-cols-2 items-center py-5">
+                <ul class="font-sans  flex gap-16" style="font-family: 'Roboto', sans-serif;">
+                    <li class="underline text-[#1176FF] font-bold">Beranda</li>
+                    <li>Event</li>
+                    <li>Organizer</li>
+                    <li>Gallery</li>
+                </ul>
+                <ul class="font-sans justify-end items-end gap-8 flex" style="font-family: 'Roboto', sans-serif;">
+                    <li>Tentang Kami</li>
+                    <li class="text-[#1176FF]">Jadi Partner Kami, Yuk!</li>
+                </ul>
+            </div>
+            <!-- End Navbar -->
+            <!-- Hero -->
+            <div class="rounded-xl my-10 overflow-hidden grid grid-cols-2 h-full bg-[#F2F2F2]">
+                <img src="assets/Group.png" class="absolute" alt="" srcset="">
+                <div class="mx-auto flex flex-col justify-center items-center w-full">
+                    <div class="lg:ml-40 justify-start flex flex-col gap-2 items-start w-full text-[#0D2654]"
+                        style="font-family: 'Poppins', sans-serif;">
+                        <h1 class="text-center font-bold text-5xl">Jangan lewatkan penawaran </h1>
+                        <h1 class="text-center font-bold text-5xl">Menarik dari loketin </h1>
+                        <h1 class="text-lg" style="font-family: 'Roboto', sans-serif;">Nikmati kemudahan manajemen tiket
+                            anda bersama kami</h1>
+                        <form action="" class="bg-white w-[350px] flex z-10 items-center gap-2 rounded-full mt-10">
+                            <img src="assets/paper-plane.png" class="w-[25px] h-[25px] ml-2" alt="" srcset="">
+                            <input type="text" placeholder="Alamat Emailmu"
+                                class="input input-ghost w-full max-w-xs border-none !outline-none" />
+                            <button class="bg-[#1176FF] text-white p-[10px] rounded-full font-sans"
+                                style="font-family: 'Roboto', sans-serif;"> Subscribe </button>
+                        </form>
+                    </div>
+                </div>
+                <img src="assets/boy.png" alt="" class="items-center justify-center mx-auto">
+            </div>
+            <!-- End Hero  -->
+            <!-- Trending -->
+            <div class="my-0">
+                <div class="flex justify-between my-4">
+                    <h1 class="font-sans text-3xl font-semibold" style="font-family: 'Roboto', sans-serif;">Lagi
+                        trending, nih!</h1>
+                    <div class="flex gap-3">
+                        <div class="bg-[#1176FF0F] rounded-full">
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12H18M6 12L11 7M6 12L11 17" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="bg-[#1176FF] rounded-full">
+                            <svg width="40px" height="40px" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#000000" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-3 gap-10">
+                    <div class="bg-[#F4F4F4] w-full h-72">
+                        <h1 class="text-center">Trending</h1>
+                    </div>
+                    <div class="bg-[#F4F4F4] w-full h-72">
+                        <h1 class="text-center">Trending</h1>
+                    </div>
+                    <div class="bg-[#F4F4F4] w-full h-72">
+                        <h1 class="text-center">Trending</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- End Trending -->
+            <!-- Event Seru -->
+            <div class="my-8 w-full content-between">
+                <div class="flex w-full">
+                    <h1 class="text-[#0D2654] text-3xl font-sans font-semibold"
+                        style="font-family: 'Roboto', sans-serif;">Event seru di Bali </h1>
+                </div>
+                <div class="grid grid-cols-5 items-center justify-between gap-3">
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium text-red-500"
+                                    style="font-family: 'Roboto', sans-serif;"> Sisa 10 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto opacity-50">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Habis </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium" style="font-family: 'Roboto', sans-serif;">
+                                    Tersedia 100 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium text-red-500"
+                                    style="font-family: 'Roboto', sans-serif;"> Sisa 10 </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl rounded-xl w-[298px] h-[457px] mx-auto">
+                        <img src="assets/event.png" class="w-[262px] h-[262px] rounded-xl mx-auto" alt="" srcset="">
+                        <div class="flex flex-col w-[262px] mx-auto mt-4 h-[147px] gap-1 justify-center">
+                            <span class="text-sm text-gray-300">Konser</span>
+                            <span class="font-semibold text-[#0D2654] font-sans"
+                                style="font-family: 'Roboto', sans-serif;">Fourtwenty Konser Festival Bali 2024</span>
+                            <span class="text-gray-400 font-sans" style="font-family: 'Roboto', sans-serif;">By <span
+                                    class="text-blue-400" style="font-family: 'Roboto', sans-serif;"> BEM FTK UNDIKSHA
+                                </span> </span>
+                            <span class="font-sans font-semibold text-[#030303] text-2xl"
+                                style="font-family: 'Roboto', sans-serif;">Mulai Rp70.000 <span
+                                    class="text-gray-200 line-through text-sm"> Rp100.000 </span> </span>
+                            <div class="flex w-72">
+                                <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                <div class="divider divider-horizontal"></div>
+                                <span class="text-sm font-sans font-medium text-red-500"
+                                    style="font-family: 'Roboto', sans-serif;"> Sisa 10 </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            <!-- Hero -->
+            <div class="relative h-80 rounded-xl w-full bg-cover bg-center"
+                style="background-image: url('assets/hero3.png');">
+                <div class="absolute inset-0 flex flex-col mt-20 ml-32 font-sans"
+                    style="font-family: 'Poppins', sans-serif;">
+                    <h1 class="text-white text-5xl font-bold">Digitalisasi tempat wisata</h1>
+                    <h1 class="text-white text-5xl font-bold">anda bersama kami</h1>
+                    <h1 class="text-lg text-white">Kamu bisa dengan mudah mengelola sistem ticketing-mu dengan loketin!
+                    </h1>
+                    <div class="mt-10">
+                        <button class="px-10 bg-white py-3 rounded-full font-bold"> Daftar Sekarang </button>
+                    </div>
+                </div>
+            </div>
+            <!-- End Hero -->
+            <!-- Event -->
+            <div class="w-full my-5">
+                <div class="flex">
+                    <h1 class="text=[#0D2654] font-bold text-2xl">Event organizer yang paling kece abis!</h1>
+                </div>
+                <div class="flex gap-3 mt-5 justify-between">
+                    <div class="w-[378px] h-[512px] bg-[#D9DDE254] flex items-center justify-center">
+                        <div class="w-[286px] h-[145px] items-center justify-center mx-auto flex flex-col font-sans"
+                            style="font-family: 'Roboto', sans-serif;">
+                            <h1 class="text-5xl font-bold text-[#0D2654]">Mau jadi bagian yang kece juga ?</h1>
+                            <button
+                                class="mt-5 font-semibold text-sm border-2 border-[#1176FF] rounded-full px-10 py-3">
+                                Daftar Organizermu Disini </button>
+                        </div>
+                    </div>
+                    <div class="card shadow-xl gap-5 w-[278px] h-[512px] flex flex-col justify-center items-center font-sans"
+                        style="font-family: 'Roboto', sans-serif;">
+                        <div class="w-[188px] h-[188px] rounded-full bg-[#F4F4F4]">
+                        </div>
+                        <h1 class="text-lg font-semibold">BEM FTK UNDIKSHA</h1>
+                        <div class="flex items-center gap-3">
+                            <div class="rating">
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-1" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <span>(4.0)</span>
+                        </div>
+                        <h1 class="text-sm text-gray-300">100 Penilaian</h1>
+                    </div>
+                    <div class="card shadow-xl gap-5 w-[278px] h-[512px] flex flex-col justify-center items-center font-sans"
+                        style="font-family: 'Roboto', sans-serif;">
+                        <div class="w-[188px] h-[188px] rounded-full bg-[#F4F4F4]">
+                        </div>
+                        <h1 class="text-lg font-semibold">Fakultas Ekonomi Undiksha</h1>
+                        <div class="flex items-center gap-3">
+                            <div class="rating">
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <span>(4.0)</span>
+                        </div>
+                        <h1 class="text-sm text-gray-300">100 Penilaian</h1>
+                    </div>
+                    <div class="card shadow-xl gap-5 w-[278px] h-[512px] flex flex-col justify-center items-center font-sans"
+                        style="font-family: 'Roboto', sans-serif;">
+                        <div class="w-[188px] h-[188px] rounded-full bg-[#F4F4F4]">
+                        </div>
+                        <h1 class="text-lg font-semibold">HMJ PGSD Undiksha</h1>
+                        <div class="flex items-center gap-3">
+                            <div class="rating">
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-3" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <span>(4.0)</span>
+                        </div>
+                        <h1 class="text-sm text-gray-300">100 Penilaian</h1>
+                    </div>
+                    <div class="card shadow-xl gap-5 w-[278px] h-[512px] flex flex-col justify-center items-center font-sans"
+                        style="font-family: 'Roboto', sans-serif;">
+                        <div class="w-[188px] h-[188px] rounded-full bg-[#F4F4F4]">
+                        </div>
+                        <h1 class="text-lg font-semibold">SINGAROCKLAND</h1>
+                        <div class="flex items-center gap-3">
+                            <div class="rating">
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400"
+                                    checked="checked" />
+                                <input type="radio" name="rating-4" class="mask mask-star-2 bg-orange-400" />
+                            </div>
+                            <span>(4.0)</span>
+                        </div>
+                        <h1 class="text-sm text-gray-300">100 Penilaian</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            <!-- Voucher -->
+            <div class="w-full mt-5">
+                <div class="flex">
+                    <h1 class="text-2xl font-bold text-[#0D2654]">Ett, ada voucher menarik dari Loketin, lhoo!</h1>
+                </div>
+                <div class="grid grid-cols-1 w-full gap-3">
+                    <div class="flex justify-between items-center">
+                        <div class="w-[299px] h-[512px] rounded-xl card shadow-xl mt-5">
+                            <img src="assets/point.png" class="bg-cover bg-center w-[263px] h-[263px] mt-3 mx-auto"
+                                alt="" srcset="">
+                            <div class="flex flex-col w-[263px] h-[143px] mx-auto font-sans"
+                                style="font-family: 'Roboto', sans-serif;">
+                                <span class="text-sm text-gray-400 text-start"> Voucher </span>
+                                <span class="font-semibold text-[#0D2654] font-sans"
+                                    style="font-family: 'Roboto', sans-serif;">Promo Buy 1 Get 1, Khusus Area
+                                    Singaraja</span>
+                                <span class="text-2xl font-bold">Rp30.000</span>
+                                <div class="flex w-full">
+                                    <progress class="progress progress-success w-full" value="70" max="100"></progress>
+                                </div>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Tersedia </span>
+                                </div>
+                                <button class="text-[#1176FF] bg-[#1176FF0F] rounded-full mt-2 px-6 py-4"> Ambil Voucher
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-[299px] h-[512px] rounded-xl card shadow-xl mt-5">
+                            <img src="assets/janji.png"
+                                class="bg-cover bg-center w-[263px] h-[263px] bg-[#EDEDED] mt-3 mx-auto" alt=""
+                                srcset="">
+                            <div class="flex flex-col w-[263px] h-[143px] mx-auto font-sans"
+                                style="font-family: 'Roboto', sans-serif;">
+                                <span class="text-sm text-gray-400 text-start"> Voucher </span>
+                                <span class="font-semibold text-[#0D2654] font-sans"
+                                    style="font-family: 'Roboto', sans-serif;">Promo Buy 1 Get 1, Khusus Area
+                                    Singaraja</span>
+                                <span class="text-2xl font-bold">Rp30.000</span>
+                                <div class="flex w-full">
+                                    <progress class="progress progress-success w-full" value="70" max="100"></progress>
+                                </div>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Tersedia </span>
+                                </div>
+                                <button class="text-[#1176FF] bg-[#1176FF0F] rounded-full mt-2 px-6 py-4"> Ambil Voucher
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-[299px] h-[512px] rounded-xl card shadow-xl mt-5">
+                            <img src="assets/fore.png" class="bg-cover bg-center w-[263px] h-[263px] mt-3 mx-auto"
+                                alt="" srcset="">
+                            <div class="flex flex-col w-[263px] h-[143px] mx-auto font-sans"
+                                style="font-family: 'Roboto', sans-serif;">
+                                <span class="text-sm text-gray-400 text-start"> Voucher </span>
+                                <span class="font-semibold text-[#0D2654] font-sans"
+                                    style="font-family: 'Roboto', sans-serif;">Promo Buy 1 Get 1, Khusus Area
+                                    Singaraja</span>
+                                <span class="text-2xl font-bold">Rp30.000</span>
+                                <div class="flex w-full">
+                                    <progress class="progress progress-error  w-full" value="70" max="100"></progress>
+                                </div>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-500"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Hampir Habis </span>
+                                </div>
+                                <button class="text-[#1176FF] bg-[#1176FF0F] rounded-full mt-2 px-6 py-4"> Ambil Voucher
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-[299px] h-[512px] rounded-xl card shadow-xl mt-5">
+                            <img src="assets/mcd.png" class="bg-cover bg-center w-[263px] h-[263px] mt-3 mx-auto" alt=""
+                                srcset="">
+                            <div class="flex flex-col w-[263px] h-[143px] mx-auto font-sans"
+                                style="font-family: 'Roboto', sans-serif;">
+                                <span class="text-sm text-gray-400 text-start"> Voucher </span>
+                                <span class="font-semibold text-[#0D2654] font-sans"
+                                    style="font-family: 'Roboto', sans-serif;">Promo Buy 1 Get 1, Khusus Area
+                                    Singaraja</span>
+                                <span class="text-2xl font-bold">Rp30.000</span>
+                                <div class="flex w-full">
+                                    <progress class="progress progress-success w-full" value="70" max="100"></progress>
+                                </div>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Tersedia </span>
+                                </div>
+                                <button class="text-[#1176FF] bg-[#1176FF0F] rounded-full mt-2 px-6 py-4"> Ambil Voucher
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-[299px] h-[512px] rounded-xl card shadow-xl mt-5">
+                            <img src="assets/mixue.png" class="bg-cover bg-center w-[263px] h-[263px] mt-3 mx-auto"
+                                alt="" srcset="">
+                            <div class="flex flex-col w-[263px] h-[143px] mx-auto font-sans"
+                                style="font-family: 'Roboto', sans-serif;">
+                                <span class="text-sm text-gray-400 text-start"> Voucher </span>
+                                <span class="font-semibold text-[#0D2654] font-sans"
+                                    style="font-family: 'Roboto', sans-serif;">Promo Buy 1 Get 1, Khusus Area
+                                    Singaraja</span>
+                                <span class="text-2xl font-bold">Rp30.000</span>
+                                <div class="flex w-full">
+                                    <progress class="progress progress-success w-full" value="70" max="100"></progress>
+                                </div>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Tersedia </span>
+                                </div>
+                                <button class="text-[#1176FF] bg-[#1176FF0F] rounded-full mt-2 px-6 py-4"> Ambil Voucher
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            <div class="grid grid-cols-4 justify-between justify-items-start my-5 font-sans"
+                style="font-family: 'Roboto', sans-serif;">
+                <div id="konser">
+                    <span class="text-2xl font-bold"> Konser </span>
+                    <div class="grid grid-rows-3 gap-6 justify-evenly mt-6">
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Konser</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Konser</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Konser</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="seminar">
+                    <span class="text-2xl font-bold"> Seminar </span>
+                    <div class="grid grid-rows-3 gap-6 justify-evenly mt-6">
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Seminar</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Seminar</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Seminar</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Pertunjukan">
+                    <span class="text-2xl font-bold"> Pertunjukan </span>
+                    <div class="grid grid-rows-3 gap-6 justify-evenly mt-6">
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Pertunjukan</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Pentas Seni Perjalanan Hidup Ki Barak
+                                    Panji Sakti</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Gratis</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Pertunjukan</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Pentas Seni Perjalanan Hidup Ki Barak
+                                    Panji Sakti</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Pertunjukan</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Pentas Seni Perjalanan Hidup Ki Barak
+                                    Panji Sakti</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="Wisata">
+                    <span class="text-2xl font-bold"> Wisata </span>
+                    <div class="grid grid-rows-3 gap-6 justify-evenly mt-6">
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Wisata</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Wisata</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-row gap-3 w-full">
+                            <div class="bg-[#F4F4F4] w-[120px] h-full"></div>
+                            <div class="flex flex-col">
+                                <span class="text-gray-400">Wisata</span>
+                                <span class="text-2xl font-bold text-[#0D2654]">Fourtwenty Konser Festival Bali
+                                    2024</span>
+                                <span class="text-sm text-gray-500"> By <span class="text-blue-500 text-sm">BEM FTK
+                                        UNDIKSHA</span></span>
+                                <span class="font-bold text-2xl text-[#030303]">Rp100.000</span>
+                                <div class="flex mt-4 w-full">
+                                    <span class="text-sm text-gray-300">Singaraja, Bali</span>
+                                    <div class="divider divider-horizontal"></div>
+                                    <span class="text-sm font-sans font-medium text-red-600"
+                                        style="font-family: 'Roboto', sans-serif;">
+                                        Sisa 10 </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 rounded-xl">
+                <div class="relative rounded-xl bg-base-200 w-full h-96 bg-cover bg-center"
+                    style="background-image: url('assets/Group.png');">
+                    <div class="grid grid-cols-2 w-full z-10 rounded-xl h-full">
+                        <div class="flex mx-5">
+                            <img src="assets/Vector.png" class="" alt="" srcset="">
+                            <img src="assets/Vector1.png" alt="" class="" srcset="">
+                        </div>
+                        <div class="flex flex-col justify-center" style="font-family: 'Poppins', sans-serif;">
+                            <h1 class="text-6xl font-semibold text-[#030303]">Tunggu kehadiran <span
+                                    class="text-[#1176FF]"> kami </span> di</h1>
+                            <h1 class="text-6xl font-semibold text-[#030303]">Kotamu, yaa</h1>
+                            <span class="font-normal mt-10 text-2xl"> Sssstt, tetap stay tune ya, biar kamu ga
+                                ketinggalan! </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-5 rounded-xl flex flex-col justify-center items-center w-full h-[345px] bg-[#5F8FE60F] gap-5 font-sans"
+                style="font-family: 'Roboto', sans-serif;">
+                <h1 class="font-bold text-xl text-[#0D2654]">Masuk dengan akun</h1>
+                <span class="text-xl">Dengan masuk menggunakan akun, Kamu dapat melakukan pembelian tiket dengan
+                    mudah.</span>
+                <button class="py-5 px-20 rounded-full font-bold bg-[#1176FF] text-white"> Masuk </button>
+            </div>
+            <div class="my-5 grid grid-cols-4 gap-4 w-full font-sans" style="font-family: 'Roboto', sans-serif;">
+                <div>
+                    <img src="assets/logo.png" alt="" srcset="">
+                    <div class="flex my-5 gap-1 flex-col justify-start items-start">
+                        <span>Loketin merupakan layanan pemesanan, manajemen tiket event, hiburan dan wisata, serta
+                            penyedia informasi yang berhubungan dengan penyelengaraan acara</span>
+                        <div class="divider"></div>
+                        <span>Perusahaan terdaftar secara resmi sebagi Penyelengaraan Sistem Elektronik dengan nomor
+                            TDPSE : 015043.01/DJAI.PSE/08/2024</span>
+                        <div class="divider"></div>
+                        <div class="flex flex-col gap-2">
+                            <span class="font-bold"> Workspace : <span class="font-thin"> Singaraja, Buleleng, Bali
+                                </span> </span>
+                            <span class="font-bold"> Email : <span class="font-thin"> infoloketin@gmail.com </span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-bold">Perusahaan</h1>
+                    <div class="flex my-5 flex-col justify-start items-start gap-10">
+                        <span>Tentang Kami</span>
+                        <span>Kerjasama</span>
+                        <span>Karir</span>
+                        <span>Kebijakan Privasi</span>
+                        <span>Syarat & Ketentuan</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-bold"> Informasi </h1>
+                    <div class="flex my-5 flex-col justify-start items-start gap-10">
+                        <span>Event</span>
+                        <span>Pusat Bantuan</span>
+                        <span>Cara Pembelian Tiket</span>
+                        <span>Kontak Kami</span>
+                        <span>Saran & Masukan</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-bold"> Aplikasi & Pembayaran </h1>
+                    <div class="flex my-5 flex-col gap-10 justify-start items-start">
+                        <span>Kamu bisa install aplikasi Loketin di Google Playstore </span>
+                        <img src="assets/ps.png" alt="" srcset="">
+                        <span>Metode Pembayaran:</span>
+                        <img src="assets/payment-list.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+            <div class="divider w-full"></div>
+            <div class="my-5 flex justify-between items-center font-sans" style="font-family: 'Roboto', sans-serif;">
+                <h1 class="font-bold text-[#1176FF]">Loketin <span class="text-gray-500">© 2024 (PT Bali Dev Access). All Rights Reserved.</span> </h1>
+                <h1 class="text-sm text-gray-400">Version 1.0.0</h1>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
